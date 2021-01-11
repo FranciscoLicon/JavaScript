@@ -1,3 +1,6 @@
+//Francisco Arturo Licón Colón.
+//Estructura de datos Pila
+
 class Pila {
     constructor(){
         this.pila = [];

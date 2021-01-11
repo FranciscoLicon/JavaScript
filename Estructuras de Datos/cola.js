@@ -1,3 +1,6 @@
+//Francisco Arturo Licón Colón.
+//Estructura de datos Cola.
+
 class Cola {
     constructor() {
         this.cola = [];
