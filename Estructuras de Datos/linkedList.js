@@ -33,25 +33,7 @@ class SinglyLinkedList {
         this.size++;
         return newNode;
     }
-
-    search(value){
-        let currentNode = this.head;
-        let message = {notFound:'No se encuentra el valor'};
-        if(!currentNode){
-            return message.notFound;
-        }
-        while(currentNode.next){
-            if(currentNode.data === value){
-                return currentNode;
-            }
-            currentNode = currentNode.next;
-        }
-        if(currentNode.data === value){
-            return currentNode;
-        }
-        return message.notFound;
-    }
-
+    
     remove(value){
         let currentNode = this.head;
         let prevNode = null;
@@ -72,6 +54,24 @@ class SinglyLinkedList {
             }
         }
         return message.notFound; 
+    }
+
+    search(value){
+        let currentNode = this.head;
+        let message = {notFound:'No se encuentra el valor'};
+        if(!currentNode){
+            return message.notFound;
+        }
+        while(currentNode.next){
+            if(currentNode.data === value){
+                return currentNode;
+            }
+            currentNode = currentNode.next;
+        }
+        if(currentNode.data === value){
+            return currentNode;
+        }
+        return message.notFound;
     }
 
 }
